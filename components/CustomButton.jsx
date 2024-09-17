@@ -1,10 +1,10 @@
+import React from 'react';
 import { ActivityIndicator, Text, TouchableOpacity } from "react-native";
 
 const CustomButton = ({
-  title,
+  tittle,
   handlePress,
-  containerStyles,
-  textStyles,
+  containerStyles,  textStyles,
   isLoading,
 }) => {
   return (
@@ -17,7 +17,7 @@ const CustomButton = ({
       disabled={isLoading}
     >
       <Text className={`text-primary font-psemibold text-lg ${textStyles}`}>
-        {title}
+        {tittle} 
       </Text>
 
       {isLoading && (
